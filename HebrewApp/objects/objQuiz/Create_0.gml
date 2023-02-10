@@ -1,3 +1,5 @@
+draw_set_halign(fa_left);
+
 // Lower by 1 point all scores
 for( i = 0; i < ds_list_size(objKnowledge.data[?objController.mode]); i++){
 	var map = objStudent.masteries[?objController.mode];
@@ -7,4 +9,5 @@ for( i = 0; i < ds_list_size(objKnowledge.data[?objController.mode]); i++){
 }
 
 questionOptions = ds_list_create();
+keyboard_string = "";
 scrGetQuiz();

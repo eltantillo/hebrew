@@ -42,7 +42,9 @@ for(i = 0; i < ds_list_size(text); i++;){
 }
 
 draw_text_color(10, 10, keyboard_string, c_white, c_white, c_white, c_white, 1);
-draw_text_color(10, 30, tip, c_white, c_white, c_white, c_white, 1);
+if !is_undefined(tip){
+	draw_text_color(10, 30, tip, c_white, c_white, c_white, c_white, 1);
+}
 if level == 0{
 	draw_text_color(10, 50, answer, c_white, c_white, c_white, c_white, 1);
 }

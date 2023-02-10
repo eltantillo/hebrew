@@ -5,8 +5,8 @@ function scrHebrewKnowledge(){
 	ds_map_add_list(objKnowledge.data, "hebrew alefbet", ds_list_create());
 	ds_map_add_list(objKnowledge.data, "hebrew niqud name", ds_list_create());
 	ds_map_add_list(objKnowledge.data, "hebrew niqud read", ds_list_create());
+	ds_map_add_list(objKnowledge.data, "hebrew read", ds_list_create());
 	ds_map_add_list(objKnowledge.data, "hebrew vocabulary", ds_list_create());
-	ds_map_add_list(objKnowledge.data, "hebrew phrases", ds_list_create());
 
 	// Alefbet
 	i = 0;
@@ -229,8 +229,6 @@ function scrHebrewKnowledge(){
 	i++;
 	#endregion
 
-	//ֲ HATEF PATAH
-
 	// Niqud Name
 	i = 0;
 	#region
@@ -290,6 +288,27 @@ function scrHebrewKnowledge(){
 	ds_map_add(map, "name", "kubutz");
 	ds_map_add(map, "meaning", "u");
 	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud name"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud name"], i);
+	ds_map_add(map, "id", "▢ֱ");
+	ds_map_add(map, "name", "Jataf Segol");
+	ds_map_add(map, "meaning", "e");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud name"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud name"], i);
+	ds_map_add(map, "id", "▢ֲ");
+	ds_map_add(map, "name", "Jataf Pataj");
+	ds_map_add(map, "meaning", "a");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud name"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud name"], i);
+	ds_map_add(map, "id", "▢ֳ");
+	ds_map_add(map, "name", "Jataf Kamatz");
+	ds_map_add(map, "meaning", "o");
+	i++;
 	#endregion
 
 	// Niqud Read
@@ -348,8 +367,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "אֻ");
-	ds_map_add(map, "name", "u");
+	ds_map_add(map, "name", "u");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "אֱ");
+	ds_map_add(map, "name", "e");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "אֲ");
+	ds_map_add(map, "name", "a");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "אֳ");
+	ds_map_add(map, "name", "o");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Vet
@@ -405,8 +445,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "בֻ");
-	ds_map_add(map, "name", "vu");
+	ds_map_add(map, "name", "vu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "בֱ");
+	ds_map_add(map, "name", "ve");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "בֲ");
+	ds_map_add(map, "name", "va");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "בֳ");
+	ds_map_add(map, "name", "vo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Bet
@@ -462,8 +523,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "בֻּ");
-	ds_map_add(map, "name", "bu");
+	ds_map_add(map, "name", "bu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "בֱּ");
+	ds_map_add(map, "name", "be");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "בֲּ");
+	ds_map_add(map, "name", "ba");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "בֳּ");
+	ds_map_add(map, "name", "bo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Guimel
@@ -519,8 +601,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "גֻ");
-	ds_map_add(map, "name", "gu");
+	ds_map_add(map, "name", "gu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "גֱ");
+	ds_map_add(map, "name", "ge");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "גֲ");
+	ds_map_add(map, "name", "ga");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "גֳ");
+	ds_map_add(map, "name", "go");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Dalet
@@ -576,8 +679,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "דֻ");
-	ds_map_add(map, "name", "du");
+	ds_map_add(map, "name", "du");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "דֱ");
+	ds_map_add(map, "name", "de");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "דֲ");
+	ds_map_add(map, "name", "da");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "דֳ");
+	ds_map_add(map, "name", "do");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Hei
@@ -633,8 +757,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "הֻ");
-	ds_map_add(map, "name", "hu");
+	ds_map_add(map, "name", "hu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "הֱ");
+	ds_map_add(map, "name", "he");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "הֲ");
+	ds_map_add(map, "name", "ha");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "הֳ");
+	ds_map_add(map, "name", "ho");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Vav
@@ -705,8 +850,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "וֻ");
-	ds_map_add(map, "name", "vu");
+	ds_map_add(map, "name", "vu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "וֱ");
+	ds_map_add(map, "name", "ve");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "וֲ");
+	ds_map_add(map, "name", "va");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "וֳ");
+	ds_map_add(map, "name", "vo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Zayin
@@ -762,8 +928,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "זֻ");
-	ds_map_add(map, "name", "zu");
+	ds_map_add(map, "name", "zu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "זֱ");
+	ds_map_add(map, "name", "ze");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "זֲ");
+	ds_map_add(map, "name", "za");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "זֳ");
+	ds_map_add(map, "name", "zo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Jet
@@ -819,8 +1006,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "חֻ");
-	ds_map_add(map, "name", "ju");
+	ds_map_add(map, "name", "ju");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "חֱ");
+	ds_map_add(map, "name", "je");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "חֲ");
+	ds_map_add(map, "name", "ja");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "חֳ");
+	ds_map_add(map, "name", "jo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Tet
@@ -876,8 +1084,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "טֻ");
-	ds_map_add(map, "name", "tu");
+	ds_map_add(map, "name", "tu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "טֱ");
+	ds_map_add(map, "name", "te");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "טֲ");
+	ds_map_add(map, "name", "ta");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "טֳ");
+	ds_map_add(map, "name", "to");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Yod
@@ -933,8 +1162,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "יֻ");
-	ds_map_add(map, "name", "yu");
+	ds_map_add(map, "name", "yu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "יֱ");
+	ds_map_add(map, "name", "ye");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "יֲ");
+	ds_map_add(map, "name", "ya");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "יֳ");
+	ds_map_add(map, "name", "yo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Jaf
@@ -990,8 +1240,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "כֻ");
-	ds_map_add(map, "name", "ju");
+	ds_map_add(map, "name", "ju");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "כֱ");
+	ds_map_add(map, "name", "je");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "כֲ");
+	ds_map_add(map, "name", "ja");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "כֳ");
+	ds_map_add(map, "name", "jo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Kaf
@@ -1047,8 +1318,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "כֻּ");
-	ds_map_add(map, "name", "ku");
+	ds_map_add(map, "name", "ku");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "כֳּ");
+	ds_map_add(map, "name", "ke");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "כֲּ");
+	ds_map_add(map, "name", "ka");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "כֳּ");
+	ds_map_add(map, "name", "ko");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Lamed
@@ -1104,8 +1396,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "לֻ");
-	ds_map_add(map, "name", "lu");
+	ds_map_add(map, "name", "lu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "לֱ");
+	ds_map_add(map, "name", "le");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "לֲ");
+	ds_map_add(map, "name", "la");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "לֳ");
+	ds_map_add(map, "name", "lo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Mem
@@ -1161,8 +1474,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "מֻ");
-	ds_map_add(map, "name", "mu");
+	ds_map_add(map, "name", "mu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "מֱ");
+	ds_map_add(map, "name", "me");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "מֲ");
+	ds_map_add(map, "name", "ma");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "מֳ");
+	ds_map_add(map, "name", "mo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Nun
@@ -1218,8 +1552,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "נֻ");
-	ds_map_add(map, "name", "nu");
+	ds_map_add(map, "name", "nu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "נֱ");
+	ds_map_add(map, "name", "ne");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "נֲ");
+	ds_map_add(map, "name", "na");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "נֳ");
+	ds_map_add(map, "name", "no");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Samej
@@ -1275,8 +1630,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "סֻ");
-	ds_map_add(map, "name", "su");
+	ds_map_add(map, "name", "su");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "סֱ");
+	ds_map_add(map, "name", "se");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "סֲ");
+	ds_map_add(map, "name", "sa");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "סֳ");
+	ds_map_add(map, "name", "so");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Ayin
@@ -1332,8 +1708,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "עֻ");
-	ds_map_add(map, "name", "u");
+	ds_map_add(map, "name", "u");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "עֱ");
+	ds_map_add(map, "name", "e");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "עֲ");
+	ds_map_add(map, "name", "a");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "עֳ");
+	ds_map_add(map, "name", "o");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Fe
@@ -1389,8 +1786,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "פֻ");
-	ds_map_add(map, "name", "fu");
+	ds_map_add(map, "name", "fu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "פֱ");
+	ds_map_add(map, "name", "fe");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "פֲ");
+	ds_map_add(map, "name", "fa");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "פֲ");
+	ds_map_add(map, "name", "fo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Pe
@@ -1446,8 +1864,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "פֻּ");
-	ds_map_add(map, "name", "pu");
+	ds_map_add(map, "name", "pu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "פֱּ");
+	ds_map_add(map, "name", "pe");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "פֲּ");
+	ds_map_add(map, "name", "pa");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "פֳּ");
+	ds_map_add(map, "name", "po");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Tzadi
@@ -1503,8 +1942,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "צֻ");
-	ds_map_add(map, "name", "tzu");
+	ds_map_add(map, "name", "tzu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "צֳ");
+	ds_map_add(map, "name", "tze");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "צֲ");
+	ds_map_add(map, "name", "tza");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "צֳ");
+	ds_map_add(map, "name", "tzo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Kuf
@@ -1560,8 +2020,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "קֻ");
-	ds_map_add(map, "name", "qu");
+	ds_map_add(map, "name", "qu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "קֱ");
+	ds_map_add(map, "name", "qe");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "קֲ");
+	ds_map_add(map, "name", "qa");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "קֳ");
+	ds_map_add(map, "name", "qo");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Resh
@@ -1617,8 +2098,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "רֻ");
-	ds_map_add(map, "name", "ru");
+	ds_map_add(map, "name", "ru");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "רֱ");
+	ds_map_add(map, "name", "re");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "רֲ");
+	ds_map_add(map, "name", "ra");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "רֳ");
+	ds_map_add(map, "name", "ro");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Sin
@@ -1675,8 +2177,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "שֹֻ");
-	ds_map_add(map, "name", "su");
+	ds_map_add(map, "name", "su");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "שֱׂ");
+	ds_map_add(map, "name", "se");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "שֲׂ");
+	ds_map_add(map, "name", "sa");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "שֳׂ");
+	ds_map_add(map, "name", "so");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//chin
@@ -1733,8 +2256,29 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "שֻׁ");
-	ds_map_add(map, "name", "chu");
+	ds_map_add(map, "name", "chu");	
 	ds_map_add(map, "meaning", "kubutz");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "שֱׁ");
+	ds_map_add(map, "name", "che");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "שֲׁ");
+	ds_map_add(map, "name", "cha");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "שֳׁ");
+	ds_map_add(map, "name", "cho");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
 	i++;
 
 	//Tav
@@ -1790,10 +2334,50 @@ function scrHebrewKnowledge(){
 	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
 	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
 	ds_map_add(map, "id", "תֻ");
-	ds_map_add(map, "name", "tu");
+	ds_map_add(map, "name", "tu");	
 	ds_map_add(map, "meaning", "kubutz");
 	i++;
 
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "תֱ");
+	ds_map_add(map, "name", "te");
+	ds_map_add(map, "meaning", "Jataf Segol");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "תֲ");
+	ds_map_add(map, "name", "ta");
+	ds_map_add(map, "meaning", "Jataf Pataj");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew niqud read"], ds_map_create());
+	var map = ds_list_find_value(objKnowledge.data[?"hebrew niqud read"], i);
+	ds_map_add(map, "id", "תֳ");
+	ds_map_add(map, "name", "to");
+	ds_map_add(map, "meaning", "Jataf Kamatz");
+	i++;
+	#endregion
+
+	// Hebrew Read
+	i = 0;
+	#region
+	ds_list_add(objKnowledge.data[?"hebrew read"], ds_map_create());
+	map = ds_list_find_value(objKnowledge.data[?"hebrew read"], i);
+	ds_map_add(map, "id", "אֵת");
+	ds_map_add(map, "strong", "853");
+	ds_map_add(map, "name", "et");
+	ds_map_add(map, "meaning", "prop. propio (pero gen. usado para señalar más definitivamente el obj. de un verbo o prep., igualmente o es decir)");
+	i++;
+
+	ds_list_add(objKnowledge.data[?"hebrew read"], ds_map_create());
+	map = ds_list_find_value(objKnowledge.data[?"hebrew read"], i);
+	ds_map_add(map, "id", "יְהֹוָה");
+	ds_map_add(map, "strong", "3068");
+	ds_map_add(map, "name", "Yehova");
+	ds_map_add(map, "meaning", "(el) auto Existente o Eterno; Jehová, nombre nacional judío de Dios");
+	i++;
 	#endregion
 
 	// Hebrew Vocabulary
@@ -71189,16 +71773,6 @@ function scrHebrewKnowledge(){
 	ds_map_add(map, "strong", "8670");
 	ds_map_add(map, "name", "Don");
 	ds_map_add(map, "meaning", "un don");
-	i++;
-	#endregion
-
-	// Hebrew Phrasess
-	i = 0;
-	#region
-	ds_list_add(objKnowledge.data[?"hebrew phrases"], ds_map_create());
-	var map = ds_list_find_value(objKnowledge.data[?"hebrew phrases"], i);
-	ds_map_add(map, "id", "אָסוֹן בִּטִיּוּל");
-	ds_map_add(map, "name", "En el principio");
 	i++;
 	#endregion
 }

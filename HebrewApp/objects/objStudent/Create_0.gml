@@ -1,5 +1,7 @@
-if file_exists(objController.username + ".na"){
-	var file = file_text_open_read(objController.username + ".na");
+username = get_string("Name", "Student");
+
+if file_exists(username + ".na"){
+	var file = file_text_open_read(username + ".na");
 	var json = file_text_readln(file);
 	masteries = json_decode(json);
 	file_text_close(file);
@@ -70,8 +72,8 @@ else{
 	ds_map_add_list(masteries, "hebrew alefbet", ds_list_create());
 	ds_map_add_list(masteries, "hebrew niqud name", ds_list_create());
 	ds_map_add_list(masteries, "hebrew niqud read", ds_list_create());
+	ds_map_add_list(masteries, "hebrew read", ds_list_create());
 	ds_map_add_list(masteries, "hebrew vocabulary", ds_list_create());
-	ds_map_add_list(masteries, "hebrew phrases", ds_list_create());
 
 	repeat(ds_list_size(objKnowledge.data[?"hebrew alefbet"])){
 		ds_list_add(ds_map_find_value(masteries, "hebrew alefbet"), 0);
@@ -82,11 +84,11 @@ else{
 	repeat(ds_list_size(objKnowledge.data[?"hebrew niqud read"])){
 		ds_list_add(ds_map_find_value(masteries, "hebrew niqud read"), 0);
 	}
+	repeat(ds_list_size(objKnowledge.data[?"hebrew read"])){
+		ds_list_add(ds_map_find_value(masteries, "hebrew read"), 0);
+	}
 	repeat(ds_list_size(objKnowledge.data[?"hebrew vocabulary"])){
 		ds_list_add(ds_map_find_value(masteries, "hebrew vocabulary"), 0);
-	}
-	repeat(ds_list_size(objKnowledge.data[?"hebrew phrases"])){
-		ds_list_add(ds_map_find_value(masteries, "hebrew phrases"), 0);
 	}
 }
 

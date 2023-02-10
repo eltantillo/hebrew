@@ -1,3 +1,5 @@
+randomize();
+
 // Camera BEGIN
 idealWidth = 1366;
 idealHeight = 768;
@@ -13,18 +15,15 @@ camera_set_view_mat(cam, vm);
 camera_set_proj_mat(cam, pm);
 // Camera END
 
-randomize();
-username = "David Morales";
-/*language = "japanese";
-section  = "hiragana seion";*/
-language = "hebrew";
-section  = "niqud name"; // alefbet, niqud name, niqud read, vocabulary
-mode     = language + " " + section;
+language = "";
+section  = "";
+mode     = "";
 
 instance_create_layer(0, 0, "BG", objBackground);
 instance_create_layer(0, 0, "Instances", objKnowledge);
 instance_create_layer(0, 0, "Instances", objStudent);
+instance_create_layer(0, 0, "Instances", objMainMenu);
 
-//Temp
-instance_create_layer(0, 0, "Instances", objQuiz);
+draw_set_font(fntMenu);
+
 room_goto(RoomMain);

@@ -6,10 +6,8 @@ if alert > 0{
 }
 draw_set_alpha(1);
 
-//gpu_set_blendmode_ext( bm_inv_src_colour, bm_one );
-//gpu_set_blendmode_ext( bm_inv_src_colour, bm_dest_alpha );
 gpu_set_blendmode_ext( bm_dest_colour, bm_one );
-//gpu_set_blendmode_ext( bm_src_alpha_sat, bm_inv_src_alpha );
+
 // Top waves
 draw_sprite_ext(sprWave, 0, x1, 0, 1, 1, 0, c_white, 1);
 draw_sprite_ext(sprWave, 0, x1 + 1920, 0, 1, 1, 0, c_white, 1);

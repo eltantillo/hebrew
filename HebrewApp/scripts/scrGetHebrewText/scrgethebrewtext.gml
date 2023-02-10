@@ -125,22 +125,15 @@ function scrGetHebrewText(argument0){
 	        ds_list_add(str, 38);
 	        break;
 		  // Compuestos
-	      case "ֿ": // Rafe
+	      case "ֱ": // Jataf Segol
 	        ds_list_add(str, 39);
 	        break;
-	      case "ֱ": // Hatef Segol
+	      case "ֲ": // Jataf Pataj
 	        ds_list_add(str, 40);
 	        break;
-	      case "ֲ": // Hatef Pataj
+	      case "ֳ": // Jataf Kamatz
 	        ds_list_add(str, 41);
 	        break;
-	      case "ֳ": // Hatef Kamatz
-	        ds_list_add(str, 42);
-	        break;
-		  //ֱ
-	      /*case "ׁ":
-	        ds_list_add(str, 41);
-	        break;*/
 		}
 		pos++;
 	}
@@ -148,7 +141,7 @@ function scrGetHebrewText(argument0){
 	textSize = -50;
 	for(i = 0; i < ds_list_size(str); i++;){
 		var char = ds_list_find_value(str, i);
-		if char < 28{
+		if char < 29{
 			switch char{
 				case 6:
 					textSize += 37;

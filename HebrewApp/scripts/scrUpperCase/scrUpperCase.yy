@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scrSanitizeString",
+  "name": "scrUpperCase",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
