@@ -9,5 +9,9 @@ for( i = 0; i < ds_list_size(objKnowledge.data[?objController.mode]); i++){
 }
 
 questionOptions = ds_list_create();
+answerOptions = ds_list_create();
+current = undefined;
 keyboard_string = "";
+cursor = "|";
+alarm[0] = 30;
 scrGetQuiz();

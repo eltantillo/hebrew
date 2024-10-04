@@ -1,0 +1,1 @@
+Cuando esté lista la funcionalidad, no olvidar cargar los sprites de los kanjis y el código en los scrips que quitamos para compilar más rápido.

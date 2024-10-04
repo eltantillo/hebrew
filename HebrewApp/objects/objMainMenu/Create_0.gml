@@ -14,6 +14,7 @@ ds_list_add(ds_map_find_value(sections, "hebrew"),
 	"niqud read",
 	"read",
 	"vocabulary",
+	"without niqud",
 );
 ds_list_add(ds_map_find_value(sections, "japanese"),
 	"hiragana seion",

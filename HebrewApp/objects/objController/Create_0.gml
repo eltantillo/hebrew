@@ -27,3 +27,8 @@ instance_create_layer(0, 0, "Instances", objMainMenu);
 draw_set_font(fntMenu);
 
 room_goto(RoomMain);
+
+colLightGray = make_color_rgb(227, 227, 227);
+colDarkGreen = make_color_rgb(0, 109, 104);
+
+control = "keyboard";
